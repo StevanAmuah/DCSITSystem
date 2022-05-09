@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Course {
 
-
+	
     List<Student> enrolledStudents;
     List<Instructor> assignedInstructors;
     int minNumberOfStudents, maxNumberOfStudents;
@@ -27,6 +27,7 @@ public class Course {
         assignedInstructors.add(instructor);
     }
     
+    //When the course is cancelled
     public boolean isCancelled(){
         return enrolledStudents.size() <= minNumberOfStudents;
     }
